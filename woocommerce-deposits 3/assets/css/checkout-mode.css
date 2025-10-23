@@ -1,0 +1,10 @@
+#pay-deposit-label  , #pay-full-amount-label {
+    margin:0;
+}
+
+#wcdp-payment-plans ul {
+    list-style: none;
+}
+#wcdp-payment-plans a , #wcdp-payment-plans input, #pay-deposit-label , #pay-full-amount-label {
+    cursor: pointer;
+}

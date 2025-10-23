@@ -1,0 +1,959 @@
+*** WooCommerce Deposits Changelog ***
+
+12/01/2024 Version 4.3.3
+         * [tweak] fixed an issue with german translations
+         * [fix] fixed a fatal error in order editor admin page
+         * minor bug fix
+
+02/01/2024 Version 4.3.2
+         * [fix] fixed a fatal error when editing comments
+         * minor bug fix
+
+23/12/2023 Version 4.3.1
+         * [update] updated woocommerce template "checkout/form-pay.php"
+         * [fix] some scripts are not loaded in admin order page when HPOS is not enabled
+
+14/12/2023 Version 4.3.0
+         * Declared compatibility with Woocommerce 8.4.0
+         * Declared official compatibility with HPOS
+         * updates to internal reminder functionality
+
+30/11/2023 Version 4.2.2
+
+         * [fix] fixed a bug with new reminder updates
+
+
+25/11/2023 Version 4.2.1
+         * Declared compatibility with Woocommerce 8.3.0
+         * [fix] fixed a bug with new reminder updates
+
+12/11/2023 Version 4.2.0
+         * Improvements to HPOS Compatibility
+         * [tweak] added formal German translation files
+         * [tweak] Made improvements to reminders functionality
+         * [fix] fixed a bug with deposit calculation in some cases
+
+29/09/2023 version 4.1.17
+
+         * [fix] fixed a bug with deposit calculation in some cases
+         * Added HPOS Compatibility
+
+19/08/2023 version 4.1.16
+
+         * Declared compatibility with Woocommerce 8.0.0
+         * [fix] fixed a bug with deposit calculation in some cases
+         * [fix] fixed an incompatiblity issue with WooCommerce PayPal Payments plugin
+
+01/07/2023 version 4.1.15
+         * minor bug fix
+
+06/06/2023 version 4.1.14
+         * [fix] recalculate deposit from admin editor caused total to be set to 0
+
+31/05/2023 version 4.1.13
+         * [Tweak] Reduced the timeout for plugin update & purchase code verification API calls
+         * [dev] added filter 'wc_deposits_order_item_deposit_data' which allows overriding deposit data
+         * minor bug fix
+
+05/04/2023 version 4.1.12
+         * [fix] Future payments settings tab was showing up empty in some environments.
+         * minor bug fix
+
+03/03/2023 version 4.1.11
+         * [tweak] Prevent partial payment emails from being sent out during deposit recalculation
+         * minor bug fix
+
+
+25/02/2023 version 4.1.10
+         * [fix] fixed an issue with adding deposit product to cart
+         * [tweak] prevent plugin classes from being loaded twice in cause there is a bug caused by 3rd party
+         * [tweak] Translations adjustment
+         * minor bug fix
+
+07/01/2023 version 4.1.9
+         * [tweak] removal of unnecessary development code
+         * minor bug fix
+
+04/01/2023 version 4.1.8
+         * [fix] Division by zero errors on product page
+         * minor bug fix
+
+
+19/12/2022 version 4.1.7
+         * minor bug fix
+
+15/12/2022 version 4.1.6
+         * Declared compatibility with Woocommerce 7.2.0
+         * [fix] fixed an issue with partial payment date not being stored correctly when deposit is recalculated
+         * [fix] fixed a display issue in admin order editor
+12/11/2022 version 4.1.5
+         * minor bug fix
+
+07/11/2022 version 4.1.4
+         * Declared compatibility with Woocommerce 7.1.0
+         * Updates to maintain compatibiltiy with "PDF Invoices & Packing Slips" Plugin" plugin
+         * minor bug fixes
+
+
+09/09/2022 version 4.1.3
+         * minor bug fix
+
+08/09/2022 version 4.1.2
+         * [fix] fixed additional partial payment issue in some scenarios
+         * minor bug fixes
+
+22/08/2022 version 4.1.1
+         * [fix] fixed a calculation issue with taxable negative fees.
+         * [fix] fixed a calculation issue with woocommerce subscriptions.
+         * [fix] fixed a division by zero error in some cases.
+         * minor bug fixes
+
+04/08/2022 version 4.1.0
+         * [tweak] support of more html tags and attributes in deposit / full messages.
+         * [tweak] updates to compatibility code for "WooCommerce PayPal Payments" plugin
+         * [fix] fixed Division by zero in checkout mode.
+         * [fix] Multiple calculation fixes for partial payments in order editor admin page.
+         * Declared compatibility with Woocommerce 6.7.0
+         * Minor bug fixes
+
+
+26/05/2022 version 4.0.21
+         * [fix] fixed a bug with deposit calculations in order editor admin page
+         * [fix] Fixed a compatibility issue with some plugins causing deposit emails to disappear from woocommerce settings
+         * [fix] fixed missing translation strings issues.
+         * Declared compatibility with Woocommerce 6.5.1
+         * Minor bug fix
+
+15/04/2022 version 4.0.20
+         * [fix] miscalculation in some cases where multiple coupons are used.
+         * [fix] error saving some actions of varitaions bulk editor
+         * minor bug fix
+
+27/03/2022 version 4.0.19
+         * [fix] fixed the functionality of partial payment invoice downloads as part of compatibilitt with "WooCommerce PDF Invoices & Packing Slips" Plugin
+         * Declared compatibility with Woocommerce 6.3.1
+         * Minor bug fix
+
+12/03/2022 version 4.0.18
+         * added action "wc_deposits_partial_payment_created" which is triggered after a partial payment is created
+         *  added function "get_order_balance_details" allowing 3rd party plugins to retrieve paid and unpaid balanced of an order
+         * basic compatibility with WooCommerce Paypal Payments plugins ( beta )
+
+09/03/2022 version 4.0.17
+         * [fix] product bulk editor issue when setting multiple payment plans
+
+02/03/2022 version 4.0.16
+         * [fix] deposit amount being set to 0 in some cases when a coupon is set to apply to future payments.
+
+
+01/03/2022 version 4.0.15
+         * [tweak] updates to the plain email template "wc-deposits-email-partial-payments-summary.php"
+         * Minor bug fix
+
+
+21/02/2022 version 4.0.14
+         * [tweak] updates to compatibility class with WooCommerce PDF Invocies & Packing slips plugin
+         * Minor bug fix
+
+17/02/2022 version 4.0.13
+
+        * [fix] improved calculation for discounts when discount amount is larger than deposit / future payments
+        * [dev] added the filter "wc_deposits_checkout_mode_available_payment_plans" allowing the manipulations of available payment plans in checkout mode
+         * Declared compatibility with Woocommerce 6.2.0
+
+08/02/2022 version 4.0.12
+         * [fix] miscalculation in checkout mode fixed deposit situation
+         * [fix] compatibility issue with ShopMagic for WooCommerce
+         * [tweak] added filter "wc_deposits_product_disable_deposit_ajax_refresh" to allow disabling ajax refresh of deposit container
+
+02/02/2022 version 4.0.11
+         * [fix] compatibility issue with Woocommerce Tm Extra Product options on product page
+         * [fix] compatibility issue with ShopMagic for WooCommerce
+         * minor bug fixes.
+
+29/01/2022 version 4.0.10
+         * [fix] Admin new order email not being triggered in some cases
+         * [fix] manually added discounts were being removed during deposit recalculation
+24/01/2022 version 4.0.9
+         * [fix] PHP error for WooCommerce bookings "has_persons" functions fixed.
+         * minor bug fix
+
+20/01/2022 version 4.0.8
+         * Minor bug fix
+
+15/01/2022 version 4.0.7
+         * Improved compatibility with WooCommerce Appointments by BookingWP
+
+
+14/01/2022 version 4.0.6
+         * [Fix] date being displayed instead of Future payment even when no due date is set.
+         * [Fix] display of placeholder {partial_payment_number} disappeared in some cases
+
+
+12/01/2022 version 4.0.5
+         * [Tweak] Improved email triggers for partial payments.
+         * [Tweak] Replaced is_ajax() with wp_doing_ajax() following WooCommerce 6.1.0.
+         * Declared compatibility with Woocommerce 6.1.0
+
+05/01/2022 version 4.0.4
+         * [Fix] Multiply deposit per persons for woocommerce bookings plugin was not always working correctly.
+
+25/12/2021 version 4.0.3
+         * [Tweak] Added warning message when some functions are invoked directly to improve
+                   custom code backward compatibility.
+
+23/12/2021 version 4.0.2
+         * Minor bug fix to checkout mode calculation
+         * [Fix] false "payment failed" error on thankyou page in some cases
+
+23/12/2021 version 4.0.1
+         * Minor fix to 4.0.0 database update process
+
+21/12/2021 version 4.0.0
+         * Declared compatibility with Woocommerce 6.0.0
+         * [Feature] Global Deposit options added.
+         * [Feature] Fixed Payment Plans.
+         * [Feature] Added a button to remove all deposit data from order.
+         * [Feature] Added a setting to hide deposit UI when deposit is forced.
+         * [Feature] Added a setting to allow having itemized partial payment instead of single line payments only.
+         * [Tweak] Reworked deposit calculation functionalities to eliminate some rounding bugs.
+         * [Tweak] Reworked plugin settings for better user experience.
+         * [Tweak] Removed Setting for shipping taxes handling, for better calculation shipping taxes values are handled with shipping
+
+
+06/11/2021 version 3.2.12
+         * Minor bug fix
+
+26/10/2021 version 3.2.11
+         * Added notification for major upcoming update (v4.0)
+         * Declared compatibility with Woocommerce 5.8.0
+
+
+01/10/2021 version 3.2.10
+         * [Fix] Error making payment on order-pay page for some gateways
+         * [Fix] Duplicate deposit email triggered in some cases
+
+27/09/2021 version 3.2.9
+         * [Fix]  issue was occurring with grouped products while being added to cart
+         * Declared compatibility with Woocommerce 5.7.1
+
+17/09/2021 version 3.2.8
+         * [Fix] Grouped products deposit values were incorrect in some scenarios.
+         * Minor bug fix
+
+07/09/2021 version 3.2.7
+         * [Tweak] display a notification message to pay-for-order page when main order cannot be paid for.
+         * Minor bug fix
+
+31/08/2021 version 3.2.6
+         * [Tweak] added filter "wc_deposits_deposit_enabled_for_customer" to allow 3rd party control over display of deposit UI based on customer
+
+22/08/2021 version 3.2.5
+         * [Fix] Deposit received email being triggered when a post-deposit partial payment is completed manually
+         * Declared compatibility with Woocommerce 5.6.0
+
+11/08/2021 version 3.2.4
+         * [Tweak] Admin can now view plugin latest version and changelog without inserting purchase code
+         * Minor display fix
+
+08/08/2021 version 3.2.3
+         * Updates to some translation strings and default values.
+
+05/08/2021 version 3.2.2
+         * [Fix] issue with partial payment status transition from on-hold to partially-paid
+
+28/07/2021 version 3.2.1
+         * [Fix] issue with HTML escaping in deposit / full messages
+
+25/07/2021 version 3.2.0
+         * Code enhancement & removed unused code
+         * Updates to ensure all plugin strings are escaped properly
+         * updates to all JavaScript functions to ensure running in strict mode
+         * Declared compatibility with Woocommerce 5.5.1
+         * [Fix] Fixed bug with wrong deposit values when customer create account during checkout.
+         * [Fix] rounding amounts issue at partial payment level
+         * [Tweak] Implemented plugins API to display plugin changelog from plugins page in wordpress
+         * Minor bug fixes
+
+15/06/2021 version 3.1.7
+         * Declared compatibility with Woocommerce 5.4.0
+         * Minor bug fix
+
+07/06/2021 version 3.1.6
+         * [Fix] : payment plans display is not sorted by name.
+         * Minor bug fix
+
+
+31/05/2021 version 3.1.5
+         * Declared compatibility with Woocommerce 5.3.0
+         * Minor bug fix
+
+07/05/2021 version 3.1.4
+         * [Feature] : allow overriding taxes , shipping & fees settings when recalculating deposit in admin order editor
+         * [Fix] : rounding fix in deposit calculations
+         * Declared compatibility with Woocommerce 5.2.2
+         * Minor bug fix
+
+31/03/2021 version 3.1.3
+         * Declared compatibility with Woocommerce 5.1.0
+         * Minor bug fix
+
+29/03/2021 version 3.1.2
+         * [Tweak] Some changes in DB Queries to improve performance.
+         * [Fix] "All Bookings" now include partially paid bookings ( WooCommerce Bookings compatibility enhancement)
+         * [Tweak] : Improved compatibility with Paypal Express checkout ( by WooThemes )
+         * Minor bug fix
+
+08/03/2021 version 3.1.1
+         * Fix : tax calculation for payment plans when customer change country
+         * Minor bug fix
+
+04/03/2021 version 3.1.0
+         * Tweak: added deposit tab to coupon data panel in coupon editor page
+         * Feature : setting to disable a coupon when cart has deposit
+         * Feature : setting to automatically apply a coupon when customer is paying full amount ( no deposit in cart)
+         * Feature : Added compatibility class to support WooCommerce PayPal Checkout Gateway
+         * Minor bug fix
+
+22/02/2021 version 3.0.15
+         * Tweak : enhanced deposit form reload when woocommerce product adds are changed
+         * Minor fix to some translations
+
+21/02/2021 version 3.0.14
+         * Fix : reminder email custom subject and heading is now applied properly.
+
+19/02/2021 version 3.0.13
+         * Fix : setting "wc_deposits_order_fully_paid_status" value was saved incorrectly
+
+18/02/2021 version 3.0.12
+         * Fix : reflect partial payment refunds on amounts in partial payments table.
+         * Minor bug fix
+
+16/02/2021 version 3.0.11
+         * Fix : Error occurred message was appearing on some appointment products when deposit is enabled
+         * Improvement : available payment plan setting override for variation products
+
+13/02/2021 version 3.0.10
+         * Feature : added setting "Order fully paid status" to set order status when all partial payments are complete and added filter "wc_deposits_order_fully_paid_status"
+         * Declared compatibility with Woocommerce 5.0.0
+         * enhanced compatibility code with bundled products
+         * Minor bug fix
+
+11/02/2021 version 3.0.9
+         * Minor bug fix to recalculating deposit discounts in order editor.
+
+10/02/2021 version 3.0.8
+         * improved grouped products handling
+         * improved experience with changing variations by adding overlay while deposit values are being refreshed.
+         * added filter "wc_deposits_add_to_cart_deposit_override" , allowing to override deposit values while adding to cart
+         * Minor bug fix
+
+01/02/2021 version 3.0.7
+         * Tweak : improved compatibility with woocommerce bookings by woothemes
+         * Minor bug fix
+
+29/01/2021 version 3.0.6
+         * fix : fixed an issue of new order email not being sent in some cases.
+         * fix : display formatted & translated order status name "Partially Paid" instead of slug 'partially-paid' in emails.
+
+28/01/2021 version 3.0.5
+        *  minor enhancements to payment plans calculations
+        *  Minor bug fix
+
+20/01/2021 version 3.0.4
+        * Fix : corrected future payments on admin order editor page.
+        * Fix : total payment plan display was not being updated on payment plan editor page load
+
+19/01/2021 version 3.0.3
+        * Declared compatibility with Woocommerce 4.9.0
+        * bug fix : Input for payment plans stuck when switching between amount types
+        * Minor bug fixes
+
+18/01/2021 version 3.0.2
+        * Added setting to display & text tab to change the string "Payment Link".
+
+16/01/2021 version 3.0.1
+        * Minor bug fix to admin editor deposit recalculation modal
+
+14/01/2021 version 3.0.0
+        ** Note : this is a major release, if you are updating from a previous version then it is advised to run the update
+                  on a staging site first and test functionality before updating live server.
+
+
+        * Feature : Allowing Payment plans to be set for both product-based and checkout-mode deposits,
+         payment plans can change total to less or more than 100% of price / total.
+        * Feature : Allowing Deposit value of 0
+        * Feature : More customizable deposit emails text & payment link values.
+        * Tweak : Displayed strings are now more modified in a simpler way.
+        * Declared compatibility with Woocommerce 4.8.0
+
+16/11/2020 version 2.5.40
+        * Added plugin update notice for an upcoming major update (V.3.0)
+        * Declared compatibility with Woocommerce 4.7.0
+
+
+23/07/2020 version 2.5.39
+        * Minor bug fix
+        * Declared compatibility with Woocommerce 4.3.1
+
+
+17/07/2020 version 2.5.38
+        * Declared compatibility with Woocommerce 4.3.0
+        * Minor bug fix
+
+26/05/2020 version 2.5.36
+        * Minor bug fix
+
+23/05/2020 version 2.5.35
+        * Minor bug fix
+
+16/05/2020 version 2.5.34
+        * Minor bug fix
+
+
+08/05/2020 version 2.5.33
+        * Minor bug fix
+
+
+30/04/2020 version 2.5.32
+        * Tweak : Admin partial payments page "Parent Order" column display  order number instead of  order id.
+        * Minor bug fix
+
+
+20/04/2020 version 2.5.31
+        * Minor bug fix
+
+05/04/2020 version 2.5.30
+        * Minor bug fix with woocommerce versions 3.6.x
+
+26/03/2020 version 2.5.29
+        * Compatibility with woocommerce 4.0.1
+        * Minor bug fix
+
+06/03/2020 version 2.5.28
+        * Compatibility class "WCDP_Partial_Payment_Invoice" can now be accessed via the plugin global $wc_deposits
+05/03/2020 version 2.5.27
+        * Minor bug fix
+
+02/03/2020 version 2.5.26
+        * Feature : based on several requests, we added a setting to control tax display in cart item details. The setting title is "Display Taxes In Cart Item Details"
+
+27/02/2020 version 2.5.25
+        * Bug fix : Cart tax display was not correct in specific scenarios.
+
+26/02/2020 version 2.5.24
+        * Minor bug fix
+
+25/02/2020 version 2.5.23
+        * Minor bug fix
+
+19/02/2020 version 2.5.22
+        * Minor bug fix
+
+10/02/2020 version 2.5.21
+        * Minor code enhancements to partial payments summary templates.
+
+
+28/01/2020 version 2.5.20
+        * Improvement : The setting ("display taxes" count taxes as part of deposits for purposes of display to the customer) only applies to product page now ( tax display included in deposit amount in cart always)
+        * Bug fix : improved deposit calculation on product level for some different Woocommerce settings.
+
+28/01/2020 version 2.5.19
+        * Bug fix : partial payment id numbers in order received pages were not shown correctly
+        * Minor changes to deposit calculation in cart to improve 3rd party compatibility
+
+
+25/01/2020 version 2.5.18
+        * Minor bug fix
+
+23/01/2020 version 2.5.17
+        * Compatibility with woocommerce 3.9.0
+        * Minor bug fix
+06/01/2020 version 2.5.16
+        * Improved compatibility with WPML
+        * Minor bug fix
+
+15/12/2019 version 2.5.15
+        * Partial payment order numbers now include parent order number
+        * Fixed a bug with second payment link when order deposit is modified
+        * Fixed issue with emaials additional content not being displayed
+
+
+07/12/2019 version 2.5.14
+        * added filter 'wc_deposits_partial_payment_title' allowing overriding title / date displayed in partial payments table
+        * added filter 'wc_deposits_order_payment_schedule' allowing modifications to partial payment schedule upon order creation
+        * minor bug fix
+
+
+03/12/2019 version 2.5.13
+        * Enhanced compatibility fix with Woocommerce bookings 1.15.0 and higher
+        * Improved compatibility with "WooCommerce PDF Invoices & Packing Slips" Plugin
+        * Compatibility with woocommerce 3.8.1
+
+29/11/2019 version 2.5.12
+        * Enhancement : When deposit partial payment fails , Parent order status is set to failed.
+        * Bug fixed : translations for some strings in admin dashboard were not being displayed
+        * Bug fixed : calculations were wrong in some cases when applying coupons in checkout-mode
+        * Compatibility with woocommerce 3.8.0
+
+09/11/2019 version 2.5.11
+        * Minor enhancements to deposit calculation code in cart
+        * fixed a bug with wrong email being sent when payment method for second payment needs manual verification
+
+03/11/2019 version 2.5.10
+        * Bug fix : Bank details were not included in some partial payments emails when order has payment method "Direct bank transfer"
+        * Improved compatibility with "WooCommerce PDF Invoices & Packing Slips" Plugin
+        * Minor bug fix
+
+16/10/2019 version 2.5.9
+        * Enhancement : Automatically sync second payment to pending status when an order is set to partially-paid.
+        * Minor bug fix
+
+
+11/10/2019 version 2.5.8
+        * Improved compatibility with "WooCommerce PDF Invoices & Packing Slips" Plugin
+        * Bug fix : product-base second payment reminder field was not displaying correctly.
+        * Minor bug fix
+
+07/10/2019 version 2.5.7
+        * Improved compatibility with "WooCommerce PDF Invoices & Packing Slips" Plugin
+
+04/10/2019 version 2.5.6
+        * Display Improvements to order details on thank you page ( Modifications to template (order/wc-deposits-order-summary.php)
+        * Added filters following filters to increase admin control over display:
+                           - wc_deposits_thankyou_show_partial_payments_summary
+                           - wc_deposits_email_show_partial_payments_summary
+                           - wc_deposits_myaccount_show_partial_payments_summary
+
+
+        * Minor bug fix
+
+11/09/2019 version 2.5.5
+        * Tweak :  Based on several requests, removed reference to partial payment number on thankyou page and will display only
+            main order number for reference to avoid customer confusion
+        * Tweak : added a setting which allows overriding form-pay.php template to display original order details during partial payment.
+
+        * Tweak : enhanced Woocommerce bookings by WooThemes compatiblity. when deposit is paid , booking status is automatically
+            transitioned to partially-paid
+        * Minor bug fix
+
+
+
+        11/09/2019 version 2.5.4
+        * minor bug fixes
+
+30/08/2019 version 2.5.3
+        * minor bug fixes
+
+21/08/2019 version 2.5.2
+        * minor bug fix
+
+14/08/2019 version 2.5.1
+        * minor bug fixes
+        * removed filter "wc_deposits_product_deposit_amount_before_display" , use filter "wc_deposits_product_deposit_amount" instead.
+        * Compatibility with woocommerce 3.7.0
+
+
+
+
+07/06/2019 version 2.5.0
+
+        * Set minimum woocommerce version to 3.6.0
+        * Added partially paid orders count to woocommerce status widget
+        * Reworked payments system for better compatibility with most gateway plugins
+        * Removed Gateway compatibility settings as they are no longer required
+        * Removed "-WCDP" suffix from order numbers as it is no longer required with new logic
+        * Added setting "Days before Second Payment is due" which sets the due date for second payment
+
+
+05/06/2019 version 2.4.11
+
+        * minor bug fix
+
+
+01/06/2019 version 2.4.10
+
+        * minor bug fix with refunds
+        * minor bug fixes
+
+28/05/2019 version 2.4.9
+
+        * minor bug fix with cart sessions
+
+25/05/2019 version 2.4.8
+
+        * Compatibility with woocommerce 3.6.3
+
+11/05/2019 version 2.4.7
+
+
+        * minor update to woocommerce reports for deposits
+        * minor bug fixes to deposit calculations and rounding
+
+
+25/03/2019 version 2.4.6
+
+        * fix : adjust deposit / full values if user choose deposit, proceed to payment gateway then hit back in browser to choose full amount
+        * minor bug fixes
+        * Compatibility with woocommerce 3.5.7
+
+11/03/2019 version 2.4.5
+
+        * Tweak : second payment settings will not display if  "Enable second payment" option is unchecked in settings
+        * Tweak : product based second payment reminder  metabox will not display if  "Enable second payment" option is unchecked in settings
+        * fix : disabled gateways in checkout mode were not showing up when paying full amount
+        * minor bug fixes
+
+08/03/2019 version 2.4.4
+        * Tweak : removed -WCDP from order number if "Enable second payment" option is unchecked in settings
+        * minor bug fixes
+
+26/02/2019 version 2.4.3
+        * minor bug fixes
+
+23/02/2019 version 2.4.2
+        * minor bug fix
+18/02/2019 version 2.4.1
+
+
+        * Translations updated ( added italian translation )
+        * Prevented plugin from running on PHP versions lower than 5.6 for compatibility reasons
+        * Minor bug fixes
+
+07/01/2019 version 2.4.0
+
+        * feature : (product based reminders for tours etc) send second payment reminder emails to all orders containing a product on a specific date in the future.
+        * feature : added option to disallow specific gateways for user making second payment
+        * fixed bug with disabling deposit for user roles in checkout mode
+        * Minor bug fixes
+
+
+10/12/2018 version 2.3.9
+        * feature : Choose how to handle cart discount ( deduct from deposit / from second payment )
+        * feature : Enable / Disable deposit functionality for selected user roles
+        * feature : Enable / Disable deposit functionality for guests ( non logged-in users )
+        * fix : fixed display bug of deposit row in checkout mode
+        * fix : fixed display bug of negative second payment when discount is more than deposit amount
+
+
+10/12/2018 version 2.3.8
+        * Compatibility with woocommerce 3.5.2
+        * Updated plugin translations
+        * fix : fixed a bug with forcing deposit in single product
+        * fix : fixed a bug with wrong tax split calculations if prices are inclusive of tax
+        * fix : fixed a price display issue if prices are inclusive of tax
+        * fix : decimals were not being saved in admin order editor if decimal separator is not a dot
+        * fix : prevent cart item duplicates with deposit if the product is set to be individually sold
+        * fix : corrected payment_complete order status when paying second payment and order status is failed
+        * feature : added setting to show "has deposit" column in admin order list table
+
+
+
+24/10/2018 version 2.3.7
+        * Compatibility with woocommerce 3.5.0
+        * fix : updated some deprecated code
+
+07/09/2018 version 2.3.6
+        * fix : fatal error when plugin activated on some environments
+        * fix : minor issue with new variations feature.
+06/09/2018 version 2.3.5
+            * fix : changed plugin update server values to fix a connectivity problem with previous update server.
+            * Compatibility with woocommerce 3.4.5
+
+
+29/08/2018 version 2.3.4
+            * Feature : support for variable deposit settings override ( each variable can have it own deposit settings )
+
+
+
+19/07/2018 version 2.3.3
+            * Minor bug fix for older versions of PHP
+
+10/07/2018 version 2.3.2
+
+            * Compatibility with woocommerce 3.4.3
+            * Minor css fix for deposit button
+
+05/07/2018 version 2.3.1
+
+            * added hooks 'wc_deposits_settings_tabs' & 'wc_deposits_after_settings_tabs_content'
+                allowing future plugin addons to show own settings tabs
+            * Feature : plugin automatic update functionality added
+            * minor bug fix
+
+14/06/2018 version 2.3.0
+
+            * Compatibility with woocommerce 3.4.2
+            * Tweak : Reworked plugin settings pages to make it easier for store managers
+            * Feature : added a setting allowing store manager to set a date
+                        to send out second payment reminder email for all partially-paid orders.
+            * Feature :  Added a setting allowing users to enable / disable order editing in partially-paid status
+            * Feature :  Added Recalculate Deposit button in order editor
+            * Tweak : Improved compatibility with Paypal Express checkout ( by WooThemes )
+            * Minor bug fixes
+
+
+24/05/2018 version 2.2.6
+        * Compatibility with woocommerce 3.4.0
+        * Tweak : enhanced price breakdown display for paypal gateway
+        * feature : Option to split fees according to deposit amount
+        * minor bug fixes
+
+
+10/02/2018 version 2.2.5
+        * Compatibility with woocommerce 3.3.1
+        * Bug fix : compatibility issue for deposit slider on Firefox / IE
+
+05/01/2018 version 2.2.4
+        * Bug fix : minor localization issues
+
+        * Bug fix : checkout mode buttons disappear when default selection is set to Full Amount
+
+        * Tweak : Added 'Mark partially paid' to orders bulk actions
+        * Minor bug fixes.
+
+23/11/2017 version 2.2.3
+        * Bug fix : deposit calculation issue with woocommerce bookings person types fixed
+
+18/11/2017 version 2.2.2
+
+       * Bug fix : Deposit status display in my account page was not correct when order status is changed manually
+
+15/11/2017 version 2.2.1
+
+       * Bug fix : Product Purchase not was not displaying partially-paid emails
+g
+20/10/2017 version 2.2.0
+
+       * Woocommerce 3.2 compatiblity
+       * Dropped support and compatibility for woocommerce versions below 3.0
+       * minor bug fixes
+19/10/2017 version 2.1.8
+
+       * tweak : added filter "wc_deposits_deposit_breakdown_tooltip_labels" which allows overriding labels in deposit breakdown tooltip
+       * Tweak : modifications to deposit breakdown tool-tip , allowing to unset any tool-tip values.
+
+09/10/2017 version 2.1.7
+
+       * Bug fix : some user added text were not getting translated properly & other translation fixes
+       *
+
+04/10/2017 version 2.1.6
+       * Tweak : User added text in settings can now be translated
+
+04/10/2017 version 2.1.5
+
+       * fixed a bug : on deposit payment, order status was updating to processing instead of partially-paid with some payment gateways.
+
+24/09/2017 version 2.1.4
+
+    * Tweak : enhanced display of deposit and second payment in customer emails
+    * fixed a bug :  wrong amount was displaying in customer email if user choose to pay deposit by check then second payment by check as well
+
+
+16/09/2017 version 2.1.3
+    * fixed a bug  : deposit calculation in checkout mode was not correct for some cases
+    * minor bug fixes
+
+30/08/2017 version 2.1.2
+
+    * Tweak : added filter "wc_deposits_is_product_deposit_enabled" to override whether deposit is enabled or not on product-level
+    * Tweak : added filter "wc_deposits_product_force_deposit" to override whether deposit is forced or not on product-level
+
+
+
+14/08/2017 version 2.1.1
+
+    * Feature : possibility to split taxes cost on deposit / second payment according to amounts
+    * Feature : deposit-breakdown explanation tooltip next to deposit amount title in cart & checkout
+    * Improved compatibility with YITH WooCommerce Product Bundles
+    * added filter "wc_deposits_cart_item_deposit_data" to allow overriding deposit values for each individual cart item
+    * minor bug fixes
+
+11/07/2017 version 2.1.0
+
+    * Marked setting "Display Taxes" as Deprecated
+    * Feature : Strings Override section in settings, allows changing of all frontend text displayed to customer
+    * Tweak : Deposit slider buttons are now loaded as a woocommerce template, it can be overwritten in parent / child theme
+
+
+
+08/07/2017 version 2.0.10
+
+    * fixed a bug : for some cases stock was not reducing when paying full amount
+    * fixed a bug with  subscription products
+10/06/2016 version 2.0.9
+
+* minor bug fixes
+* Tweak : deposit button will not display in checkout mode if deposit amount is 0 or less
+
+24/05/2017 version 2.0.8
+
+* rewritten email templates to match woocommerce latest templates
+* minor bug fixes in order editor
+* removed some legacy code
+* other minor fixes
+
+22/05/2017 version 2.0.7
+
+* fixed a bug with deposit calculation
+
+20/05/2017 version 2.0.6
+* compatibility with WooCommerce 3.0.7
+* Feature : checkout-based deposit mode added ( available for Woocommerce 3.0.0+ )
+* updated translations
+
+
+26/04/2017 version 2.0.5
+
+* compatibility with woocommerce 3.0.4
+* enhancements to Woo Subscriptions compatibility on product page
+* Feature : new email template : Second Payment Reminder ( available for Woocommerce 3.0.0+ )
+* Feature : added the ability for admin to set up reminder email of second payment to be sent automatically to customer after * number of days ( available for Woocommerce 3.0.0+ )
+
+* added resend partially-paid and second-payment reminder emails to order actions, resend order emails section ( available for Woocommerce 3.0.0+ )
+* updates to deposit calculations interface in admin order area ( based on product deposits and taxes/fees/shipping handling settings)
+* fixed an error with refunded orders in order management admin page
+
+16/04/2017 version 2.0.4
+
+* compatibility with woocommerce 3.0.3
+* product editor and bulk editor compatibility with woocommerce 3.0.* CRUD
+* Woo Subscriptions compatibility : deposit calculation now applies on sign-up fee and ignores recurring subscription fees.
+* Featured : added option that allows user to choose when to collect fees (either with deposit or second-payment)
+* fixed a bug with incorrect deposit amount when changing order total after it becomes already partially-paid
+* fixed a bug with email templates
+* added filters 'woocommerce_deposits_cart_deposit_amount' and 'woocommerce_deposits_cart_second_payment_amount' allowing overriding of deposit and second-payment amounts in cart/checkout
+* fixed a bug with some emails failing to send due to empty body error
+* some improvements to "update outdated orders" tool
+
+10/04/2017 version 2.0.3
+* Deposit status row removed from order received and email templates because of a bug with woocommerce caching, it still is viewable from myaccount page
+* Implemented wc-deposits-legacy classes for backward compatibility
+* replaced all product/order meta updating functions to use woocommerce 3.0+ CRUD
+* fixed a bug with variations product not working
+* updated email templates to be fully functional with woocommerce 3.0
+
+1/04/2017 version 2.0.2
+* Compatibility with WooCommerce 3.0
+* Feature : added gateway compatibility enhancement section to settings (with a single option currently)
+* updated translations
+
+29/03/2017 version 2.0.1
+* Compatibility with Woocommerce 2.6.14
+* Feature : added option that allows user to choose when to collect taxes (either with deposit or second-payment)
+* Feature : added option that allows user to choose when to collect shipping (either with deposit or second-payment) , please note that shipping taxes are collected with taxes
+* Feature : added option to use basic radio buttons for deposits in product pages,helpful in cases where there are multiple deposit buttons in the same page or when there are css conflicts
+* Tweak : deposit & remaining fields won't display in cart / checkout/ emails if there is no deposit in cart /order
+* fixed a bug  of some orders displaying incorrect price amounts
+* fixed a minor display bug with order editing page
+* fixed a bug which caused partially-paid orders to get cancelled if making second payment fails
+* fixed a bug that caused "pay" button to display to customers even if second payment is disabled by admin
+* fixed a compatibility bug with woocommerce bookings that caused fatal error to occur when trying to access bookings
+* fixed a minor bug wih decimal separator in admin order editing area
+* added compatibility with Payment Gateway Based Fees
+* Improved compatibility with Woocommerce Bookings and Woocommerce Appointments
+* Feature : added options to change deposit button colors
+* updated translations
+
+2016.03.29 - version 1.6
+* Fix stock reduction not working in rare cases.
+* Don't modify order totals after order completion.
+* Overhaul of the order editor logic.
+* Fix "Amount Paid:" and "To Pay:" in contextual situations.
+* Fix order totals with WooCommerce 2.5.
+* Fix email templates with WooCommerce 2.5.
+* Support for Composite Products. You must add a deposit percentage to at least one component.
+* Don't hide any items in order editor.
+* Hide `Remaining Amount` on final payment.
+* Fix an issue with emails and the remaining amount.
+* Fix a rounding issue.
+* Fix a bug with WooCommerce Bookings.
+
+2016.01.20 - version 1.5.1
+* Compatibility with WooCommerce 2.5.
+* Generate unique order numbers based on order status. (Better compatibility with gateways)
+* Fixed bug with variable products and Booking System PRO.
+* Fixed translations having the wrong file names.
+* Misc. UI bug fixes.
+
+2015.06.02 - version 1.5
+* Added new translations: Arabic, Dutch, French, German, and Spanish.
+* Added bulk editing.
+* Added WooCommerce reports.
+* Added new email templates: partial payment emails to the customers now contain a payment link.
+* Added the option to prevent customers from making the second payment.
+* Added stock reduction options. (On deposit/full payment)
+* Extra filters to control items passed to the gateway.
+* Change 'Paid Today:' to 'To Pay:' in the cart as well as the checkout page.
+* Set explicit price on line items on second payment.
+* Fixed typos in email description and the admin interface.
+* Fixed stylesheet priority.
+* Fixed WooCommerce detection in multi-site configurations.
+* Fixed calculation of order total when manually creating new order.
+
+2015.03.01 - version 1.4.2
+* Fixed issue with deposit metadata handling.
+* Hide everything without a remaining amount from the second payment.
+* Fix WooCommerce colour selection.
+* Changed 'Paid Today:' to 'To Pay:'
+
+2015.02.12 - version 1.4.1
+* WooCommerce 2.3.x compatibility.
+* Fixed missing translations.
+* Fixed a potential rounding issue.
+* Fixed order editor bug preventing setting the remaining amount to 0.
+* Removed redundant price suffixes.
+* Fixed rare bug in the enumeration of variable products.
+* Restore deposit/price range upon clearing variable product selection.
+* Don't display 'per item' for products sold individually.
+
+2015.01.02 - version 1.4
+* Applied coupon discounts will now subtract from the remaining amount rather than the deposit amount when appropriate.
+* The 'Paid Today' and 'Remaining' fields are now displayed after 'Order Total' in the cart totals.
+* Manually marking orders with a deposit as complete clears the remaining balance.
+* Only enqueue front-end scripts and styles on product pages with deposits enabled.
+* Fixed tax display option always activating.
+* Fixed misc. translations.
+* Fixed deposit button CSS and expanded gradient browser support.
+* Added minimum-maximum deposit display for variable products when a percentage is used.
+* Added dynamic client-side deposit display for variable products.
+
+2014.11.03 - version 1.3.2
+* Fixed product tax display. (Since tax is always collected upfront)
+* Added the option to add taxes to the deposit for purposes of display.
+
+2014.10.31 - version 1.3.1
+* Fixed PayPal cart issues with partial payments.
+
+2014.10.29 - version 1.3
+* Added 'Partially paid' order status.
+* Added editable deposit fields in the order editor admin back-end.
+* Added the ability for the customer to pay the remaining amount.
+* Added email hooks for the new order status.
+* Added additional security checks.
+* Fixed conditional payment gateway disabling logic.
+* Fixed initial status for the deposit switch.
+* Fixed order-specific currency display in order admin view.
+* Fixed order-specific currency display in emails and the checkout page.
+
+2014.10.25 - version 1.2.1
+* Fixed a security issue.
+* Updated totals display in the 'my account' page.
+* More small fixes.
+
+2014.10.24 - version 1.2
+* Added the ability to change the button text for the deposit options.
+* Added the ability to select the default deposit option when adding to cart.
+* Fixed links in custom messages in the add-to-cart form.
+* Some small fixes.
+
+2014.10.22 - version 1.1
+* Added the ability to disable specific payment gateways when there's a deposit in cart.
+* Added the ability to disable all deposit functionality site-wide.
+* Added the ability to show custom messages in the add-to-cart form.
+* New site-wide settings tab in the WooCommerce settings.
+* A number of small fixes.
+
+2014.10.16 - version 1.0
+ * First Release.
